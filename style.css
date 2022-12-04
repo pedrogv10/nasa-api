@@ -9,4 +9,8 @@ body {
     font-style: italic;
     color: #373fff;
   }
-  
+
+  #content {
+    display: flex;
+    justify-content: center;
+  }

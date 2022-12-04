@@ -26,7 +26,7 @@ function useApiData(data) {
         console.log('é video')
 
         document.querySelector('#content').innerHTML = 
-        `<iframe width="420" height="315"
+        `<iframe width="960" height="540px"
         src="${data.url}">
         </iframe>`;        
     }
