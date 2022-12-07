@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Nasa API</title>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <title>Nasa API</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- import the webpage's stylesheet -->
-		<link rel="stylesheet" href="/nasa-api/style.css" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/nasa-api/style.css" />
 
-		<!-- import the webpage's javascript file -->
-		<script src="/nasa-api/script.js" defer></script>
-	</head>
-	<body>
-		<h1>Nasa API</h1>
-		<input id="searchTerm" type="text" placeholder="Enter search term" />
-		<button id="search">Search</button>
-		<div id="content"></div>
-	</body>
+    <!-- import the webpage's javascript file -->
+    <script src="/nasa-api/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Nasa - APOD (Astronomy Picture of the Day)</h1>
+        <p>
+          A cada dia, uma imagem ou fotografia diferente do nosso universo
+          fascinante <br />
+          é apresentada, juntamente com uma breve explicação <br />
+          escrita por um astrônomo profissional.
+        </p>
+      </header>
+
+      <div id="content"></div>
+
+      <div class="Titulo">
+        <p>Título</p>
+        <h2 id="api-title">NGC 7293: The Helix Nebula</h2>
+      </div>
+
+      <div class="Explanation">
+        <p class="Sobre-Title">Sobre</p>
+        <p class="api-explanation">
+          A mere seven hundred light years from Earth, toward the constellation
+          Aquarius, a sun-like star is dying. The dying star's last few thousand
+          years have produced the Helix Nebula (NGC 7293), a well studied and
+          nearby example of a Planetary Nebula, typical of this final phase of
+          stellar evolution. Combining narrow band image data from emission
+          lines of hydrogen atoms in red and oxygen atoms in blue-green hues, it
+          shows tantalizing details of the Helix, including its bright inner
+          region about 3 light-years across. The white dot at the Helix's center
+          is this Planetary Nebula's hot, central star. A simple looking nebula
+          at first glance, the Helix is now understood to have a surprisingly
+          complex geometry.
+        </p>
+      </div>
+      <div class="footer">
+        <p>Dados obtidos pela <span>Nasa</span></p>
+        <p>LinkedIn</p>
+      </div>
+    </div>
+  </body>
 </html>
