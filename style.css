@@ -33,7 +33,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 36px;
-  line-height: 44px;  
+  line-height: 44px;
   color: #000000;
 }
 
@@ -47,3 +47,47 @@ header {
   justify-content: center;
 }
 
+#content img {
+  width: 100%;
+  max-height: 1066px;
+
+  box-shadow: 9px 11px 10px rgba(0, 0, 0, 0.25);
+}
+
+.Titulo {
+  background: #F6F6F6;
+
+  height: 152px;
+  width: 100%;
+  display: flex;
+
+  margin-top: 22px;
+}
+
+.Titulo p {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+}
+
+.Titulo h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #6604E2;
+}
+
+.Titulo .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Explanation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
