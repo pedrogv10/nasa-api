@@ -11,8 +11,20 @@ async function sendApiRequest() {
 
 sendApiRequest();
 
+
+
 //function that does something with the data received from the API. The name of the function should be customized to whatever you are doing with the data
 function useApiData(data) {
+
+    const imageQuality = [
+        {
+            hdurl: data.hdurl,
+            lowUrl: data.url,
+        }
+    ]
+
+    let currentQuality = 'lowUrl';  // Inicia com a qualidade baixa
+    let currentUrl = imageQuality[0][currentQuality];  // Inicia com a primeira imagem da qualidade baixa
 
     if (data.media_type == "video") {
         console.log('é video')
@@ -25,11 +37,24 @@ function useApiData(data) {
 
     if (data.media_type == "image") {
         console.log('é imagem');
-        document.querySelector('#content').innerHTML += `<div class="image-apod" style="background-image: url(${data.hdurl});"></div>`;
+        document.querySelector('#content').innerHTML += `<div class="image-apod" style="background-image: url(${currentUrl});"></div>`;
 
         document.querySelector('#api-title').innerHTML += data.title;
 
         document.querySelector('.image-explanation').innerHTML += data.explanation;
+
+        // Adiciona event listeners para os botões
+        document.querySelector('#low-quality-button').addEventListener('click', () => {
+            currentQuality = 'lowUrl';
+            currentUrl = imageQuality[0][currentQuality];
+            document.querySelector('#content').innerHTML = `<div class="image-apod" style="background-image: url(${currentUrl});"></div>`;
+        });
+
+        document.querySelector('#high-quality-button').addEventListener('click', () => {
+            currentQuality = 'hdurl';
+            currentUrl = imageQuality[0][currentQuality];
+            document.querySelector('#content').innerHTML = `<div class="image-apod" style="background-image: url(${currentUrl});"></div>`;
+        });
     }
 }
 

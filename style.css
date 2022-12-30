@@ -63,6 +63,8 @@ header p {
 #content {
   display: flex;
   justify-content: center;
+
+  flex-direction: column;
 }
 
 .image-apod {
@@ -153,4 +155,200 @@ header p {
   height: 119px;
   align-items: center;
   padding: 0 25px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 35px;
+  margin-bottom: 35px;
+
+}
+
+#low-quality-button {
+  background-color: #6604E2;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+#low-quality-button span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#low-quality-button:before,
+#low-quality-button:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #6604E2;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+
+#low-quality-button:before {
+  height: 0%;
+  width: 2px;
+}
+
+#low-quality-button:after {
+  width: 0%;
+  height: 2px;
+}
+
+#low-quality-button:hover:before {
+  height: 100%;
+}
+
+#low-quality-button:hover:after {
+  width: 100%;
+}
+
+#low-quality-button:hover {
+  background: transparent;
+}
+
+#low-quality-button span:hover {
+  color: #6604E2;
+}
+
+#low-quality-button span:before,
+#low-quality-button span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #6604E2;
+  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
+  transition: all 0.3s ease;
+}
+
+#low-quality-button span:before {
+  width: 2px;
+  height: 0%;
+}
+
+#low-quality-button span:after {
+  height: 2px;
+  width: 0%;
+}
+
+#low-quality-button span:hover:before {
+  height: 100%;
+}
+
+#low-quality-button span:hover:after {
+  width: 100%;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0, 0, 0, .1),
+    4px 4px 5px 0px rgba(0, 0, 0, .1);
+  outline: none;
+}
+
+#high-quality-button {
+  background-color: #6604E2;;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+#high-quality-button span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#high-quality-button:before,
+#high-quality-button:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #6604E2;
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  transition: all 0.3s ease;
+}
+
+#high-quality-button:before {
+  height: 0%;
+  width: 2px;
+}
+
+#high-quality-button:after {
+  width: 0%;
+  height: 2px;
+}
+
+#high-quality-button:hover:before {
+  height: 100%;
+}
+
+#high-quality-button:hover:after {
+  width: 100%;
+}
+
+#high-quality-button:hover {
+  background: transparent;
+}
+
+#high-quality-button span:hover {
+  color: #6604E2;
+}
+
+#high-quality-button span:before,
+#high-quality-button span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #6604E2;
+  transition: all 0.3s ease;
+}
+
+#high-quality-button span:before {
+  width: 2px;
+  height: 0%;
+}
+
+#high-quality-button span:after {
+  height: 2px;
+  width: 0%;
+}
+
+#high-quality-button span:hover:before {
+  height: 100%;
+}
+
+#high-quality-button span:hover:after {
+  width: 100%;
 }
