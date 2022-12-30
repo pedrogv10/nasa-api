@@ -60,6 +60,7 @@ header p {
 
   color: #000000;
 }
+
 #content {
   display: flex;
   justify-content: center;
@@ -138,14 +139,16 @@ header p {
   background: #6604E2;
 }
 
-.footer .dados-obtidos, .linkedin {
+.footer .dados-obtidos,
+.linkedin {
   font-weight: 400;
   font-size: 26px;
   line-height: 31px;
   color: #FFFFFF;
 }
 
-.footer .dados-obtidos span, .linkedin {
+.footer .dados-obtidos span,
+.linkedin {
   font-weight: 700;
 }
 
@@ -188,9 +191,9 @@ header p {
   right: 0;
   bottom: 0;
   background: #6604E2;
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
   transition: all 0.3s ease;
 }
@@ -228,10 +231,6 @@ header p {
   left: 0;
   top: 0;
   background: #6604E2;
-  /*box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);*/
   transition: all 0.3s ease;
 }
 
@@ -265,14 +264,15 @@ header p {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+  box-shadow:
     7px 7px 20px 0px rgba(0, 0, 0, .1),
     4px 4px 5px 0px rgba(0, 0, 0, .1);
   outline: none;
 }
 
 #high-quality-button {
-  background-color: #6604E2;;
+  background-color: #6604E2;
+  ;
   line-height: 42px;
   padding: 0;
   border: none;
@@ -292,9 +292,9 @@ header p {
   right: 0;
   bottom: 0;
   background: #6604E2;
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, .5),
     inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
   transition: all 0.3s ease;
 }
@@ -351,4 +351,37 @@ header p {
 
 #high-quality-button span:hover:after {
   width: 100%;
+}
+
+#loading {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;
+  margin: auto;
+  display: none;
+  animation: spin 1s infinite linear;
+
+  position: absolute;
+  bottom: 50%;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+
+  z-index: 5;
+}
+
+#loading.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }

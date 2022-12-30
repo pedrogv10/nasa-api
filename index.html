@@ -17,49 +17,61 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet" />
-      <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="favicon.ico" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1><span>Nasa</span>  - APOD (Astronomy Picture of the Day)</h1>
-        <p>
-          A cada dia, uma imagem ou fotografia diferente do nosso universo
-          fascinante <br />
-          é apresentada, juntamente com uma breve explicação <br />
-          escrita por um astrônomo profissional.
-        </p>
-      </header>
-    </div>
-
-    <div class="buttons">
-      <button class="custom-btn" id="low-quality-button"><span> Qualidade Baixa</span></button>
-      <button class="custom-btn" id="high-quality-button"><span>Qualidade Alta</span> </button>
-    </div>
-
-    <div id="content"></div>
-
-    <div class="Titulo">
+    <div id="loading"></div>
+    <div id="all-content">
       <div class="container">
-        <p>Título</p>
-        <h2 id="api-title"></h2>
+        <header>
+          <h1><span>Nasa</span> - APOD (Astronomy Picture of the Day)</h1>
+          <p>
+            A cada dia, uma imagem ou fotografia diferente do nosso universo
+            fascinante <br />
+            é apresentada, juntamente com uma breve explicação <br />
+            escrita por um astrônomo profissional.
+          </p>
+        </header>
       </div>
-    </div>
 
-    <div id="google_translate_element"></div>
-
-    <div class="container">
-      <div class="Explanation">
-        <p class="Sobre-Title">Sobre</p>
-        <p class="image-explanation">
-        </p>
+      <div class="buttons">
+        <button class="custom-btn" id="low-quality-button">
+          <span> Qualidade Baixa</span>
+        </button>
+        <button class="custom-btn" id="high-quality-button">
+          <span>Qualidade Alta (4K  )</span>
+        </button>
       </div>
+
+      <div id="content"></div>
+
+      <div class="Titulo">
+        <div class="container">
+          <p>Título</p>
+          <h2 id="api-title"></h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="Explanation">
+          <p class="Sobre-Title">Sobre</p>
+          <p class="image-explanation"></p>
+        </div>
       </div>
 
       <div class="footer">
         <div class="container">
-          <p class="dados-obtidos">Dados obtidos pela <a href="https://api.nasa.gov/" target="_blank"><span>Nasa</span></a></p>
-          <p class="linkedin"><a href="https://www.linkedin.com/in/pedrogv10/" target="_blank">Meu LinkedIn</a></p>
+          <p class="dados-obtidos">
+            Dados obtidos pela
+            <a href="https://api.nasa.gov/" target="_blank"
+              ><span>Nasa</span></a
+            >
+          </p>
+          <p class="linkedin">
+            <a href="https://www.linkedin.com/in/pedrogv10/" target="_blank"
+              >Meu LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </div>
