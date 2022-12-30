@@ -25,7 +25,7 @@ function useApiData(data) {
 
     if (data.media_type == "image") {
         console.log('é imagem');
-        document.querySelector('#content').innerHTML += `<div class="image-apod" style="background-image: url(${data.url});"></div>`;
+        document.querySelector('#content').innerHTML += `<div class="image-apod" style="background-image: url(${data.hdurl});"></div>`;
 
         document.querySelector('#api-title').innerHTML += data.title;
 
