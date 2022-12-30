@@ -18,14 +18,18 @@ function useApiData(data) {
         console.log('é video')
 
         document.querySelector('#content').innerHTML =
-            `<iframe width="960" height="540px"
+            `<iframe width="100%" height="540px"
         src="${data.url}">
         </iframe>`;
     }
 
     if (data.media_type == "image") {
         console.log('é imagem');
-        document.querySelector('#content').innerHTML += `<img src="${data.url}" />`;
+        document.querySelector('#content').innerHTML += `<div class="image-apod" style="background-image: url(${data.url});"></div>`;
+
+        document.querySelector('#api-title').innerHTML += data.title;
+
+        document.querySelector('.image-explanation').innerHTML += data.explanation;
     }
 }
 
