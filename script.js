@@ -41,7 +41,7 @@ function useApiData(data) {
 
     if (data.media_type == "image") {
         console.log('é imagem');
-        
+
         document.querySelector('#content').innerHTML += `<div role="img" aria-label="imagem de destaque do dia" class="image-apod" style="background-image: url(${currentUrl});"></div>`;
 
         document.querySelector('#api-title').innerHTML += data.title;
@@ -61,4 +61,7 @@ function useApiData(data) {
             document.querySelector('#content').innerHTML = `<div role="img" aria-label="imagem de destaque do dia" class="image-apod" style="background-image: url(${currentUrl});"></div>`;
         });
     }
+
+
+    { data.url == data.hdurl ? document.getElementById('high-quality-button').style.display = 'none' : '' }
 }
