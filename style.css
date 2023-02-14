@@ -1,21 +1,89 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 body {
@@ -76,7 +144,11 @@ header p {
   background-repeat: no-repeat;
 
   box-shadow: 9px 11px 10px rgba(0, 0, 0, 0.25);
+
+
 }
+
+
 
 .Titulo {
   background: #F6F6F6;
@@ -384,4 +456,69 @@ header p {
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (max-width: 768px) {
+  .image-apod {
+    height: 500px;
+  }
+
+  h1 {
+    line-height: inherit;
+    font-size: 22px;
+  }
+
+  header p br {
+    display: none;
+
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  #all-content {
+    padding: 0 20px;
+  }
+
+  #api-title {
+    font-size: 30px;
+    line-height: inherit;
+  }
+
+  .Titulo p {
+    font-size: 22px !important;
+    line-height: inherit !important;
+    margin-bottom: 25px;
+  }
+
+  .Explanation .Sobre-Title {
+    font-size: 25px;
+  }
+
+  .Explanation .image-explanation {
+    font-size: 18px !important;
+    text-align: center !important;
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 25px;
+    height: inherit;
+    flex-direction: column;
+  }
+
+  .footer .dados-obtidos, .linkedin {
+    font-size: 15px;
+  }
+
+  .linkedin a {
+    color: yellow;
+  }
+  .footer {
+    margin-top: -90px;
+  }
+
 }
